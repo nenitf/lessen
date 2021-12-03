@@ -1,0 +1,48 @@
+{{ define "main" }}
+<main>
+    <article>
+        <header class="">
+            <div>
+                <a href="{{.Site.BaseURL}}{{.Section}}">{{ humanize .Section | upper}}</a>
+            </div>
+
+            <h1 class="">{{- .Title -}}</h1>
+
+            {{if .Params.Audio}}
+            <audio controls="" style="width:99%;">
+                <source src="{{ .Site.BaseURL }}/{{.Params.Audio}}" type="audio/mpeg">
+            </audio>
+            {{end}}
+
+
+            {{if or (.Site.Params.Repo) (.Params.Fonte)}}
+            <ul class="remote-options">
+                {{if .Params.Fonte}}
+                <li>
+                    <a href="{{.Params.Fonte}}">Fonte</a>
+                </li>
+                {{end}}
+                {{if .Site.Params.Repo}}
+                <li>
+                    <a href="{{.Site.Params.Repo}}/edit/main/content/{{replace .File.Path "\\" "/"}}">Editar</a>
+                </li>
+                <li>
+                    <a href="{{.Site.Params.Repo}}/commits/main/content/{{replace .File.Path "\\" "/"}}">Log</a>
+                </li>
+                {{end}}
+            </ul>
+            {{end}}
+        </header>
+
+        {{- .Content -}}
+    </article>
+
+    {{ range .Params.tags }}
+    <li class="list">
+        <a href="{{ "/tags/" | relLangURL }}{{ . | urlize }}" class="">
+            {{- . -}}
+        </a>
+    </li>
+    {{ end }}
+</main>
+{{ end }}

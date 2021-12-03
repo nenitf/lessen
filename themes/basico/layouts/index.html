@@ -1,0 +1,12 @@
+{{ define "main" }}
+
+<main>
+    <ul class="cards">
+        {{ range .Site.RegularPages }}
+        <li class="card-item">
+            {{ partial "card-post" . }}
+        </li>
+        {{end}}
+    </ul>
+</main>
+{{ end }}
