@@ -1,0 +1,15 @@
+@media (prefers-color-scheme: light) {
+    :root {
+        --ui-base-color: var(--onedark-dark-black);
+        --ui-text-color: var(--ui-base-color);
+        --ui-background-color: white;
+
+        --ui-link-color: blue;
+
+        --ui-text-color-pre: var(--onedark-light-white);
+        --ui-background-color-pre: var(--onedark-dark-black);
+
+        --ui-border-color: var(--onedark-dark-grey);
+        --border: dashed 2px var(--ui-border-color);
+    }
+}
