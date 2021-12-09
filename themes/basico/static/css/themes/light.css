@@ -3,6 +3,8 @@
         --ui-base-color: var(--onedark-dark-black);
         --ui-text-color: var(--ui-base-color);
         --ui-background-color: white;
+        --ui-selection-text: var(--ui-background-color);
+        --ui-selection-background: var(--ui-base-color);
 
         --ui-link-color: blue;
 
