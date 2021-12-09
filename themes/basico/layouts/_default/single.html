@@ -8,10 +8,9 @@
 
             <h1 class="">{{- .Title -}}</h1>
 
-            <video controls="" style="width:99%; height: 10rem;">
+            <audio controls="" style="width:99%;">
                 <source src="/{{.Section}}/{{.File.TranslationBaseName}}.mp3" type="audio/mp3">
-                <track kind="subtitles" src="/{{.Section}}/{{.File.TranslationBaseName}}.vtt" type="text/vtt" default>
-            </video>
+            </audio>
 
 
             {{if or (.Site.Params.Repo) (.Params.Fonte)}}
