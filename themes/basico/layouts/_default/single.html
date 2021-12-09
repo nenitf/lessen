@@ -8,11 +8,10 @@
 
             <h1 class="">{{- .Title -}}</h1>
 
-            {{if .Params.Audio}}
-            <audio controls="" style="width:99%;">
-                <source src="{{ .Site.BaseURL }}/{{.Params.Audio}}" type="audio/mpeg">
-            </audio>
-            {{end}}
+            <video controls="" style="width:99%; height: 10rem;">
+                <source src="/{{.Section}}/{{.File.TranslationBaseName}}.mp3" type="audio/mp3">
+                <track kind="subtitles" src="/{{.Section}}/{{.File.TranslationBaseName}}.vtt" type="text/vtt" default>
+            </video>
 
 
             {{if or (.Site.Params.Repo) (.Params.Fonte)}}

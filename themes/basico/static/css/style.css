@@ -194,4 +194,14 @@ blockquote {
 }
 /*}}}*/
 
+/* https://iandevlin.com/blog/2015/12/html5/webvtt-and-audio/ */
+video {
+   border: 1px solid #aaa;
+   object-fit: initial;
+}
+
+video::cue {
+    font-size: 1rem;
+}
+
 /* vim: set fdm=marker: */

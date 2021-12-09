@@ -1,6 +1,5 @@
 ---
 title: "Avaricious and envious"
-audio: avaricious-and-envious.mp3
 fonte: https://etc.usf.edu/lit2go/35/aesops-fables/367/-avaricious-and-envious
 draft: false
 ---
