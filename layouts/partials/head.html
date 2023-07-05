@@ -19,8 +19,11 @@
     {{ template "_internal/google_analytics_async.html" . }}
     {{ end }}
 
-    <link rel="stylesheet" href="/css/reset.css">
-    <link rel="stylesheet" href="/css/themes/dark.css">
-    <link rel="stylesheet" href="/css/themes/light.css">
-    <link rel="stylesheet" href="/css/style.css">
+    {{range slice "/css/reset.css" "/css/themes/dark.css" "/css/themes/light.css" "/css/style.css"}}
+    {{ $style := resources.Get . | minify | fingerprint }}
+    <link rel="stylesheet" href="{{ $style.Permalink }}">
+    {{end}}
+
+    {{ $style := resources.Get "/sass/lyrics.scss" | toCSS | minify | fingerprint }}
+    <link rel="stylesheet" href="{{ $style.Permalink }}">
 </head>

@@ -8,7 +8,7 @@
 
             <h1 class="">{{- .Title -}}</h1>
 
-            <audio controls="" style="width:99%;">
+            <audio id="audiofile" controls="" style="width:99%;">
                 <source src="/{{.Section}}/{{.File.TranslationBaseName}}.mp3" type="audio/mp3">
             </audio>
 
@@ -32,7 +32,22 @@
             {{end}}
         </header>
 
-        {{- .Content -}}
+        <div id="subtitles">
+            {{range .Params.paragraphs}}
+            <p>
+            {{range .}}<span data-start="{{.start}}" data-end="{{.end}}">{{.en_us}}</span> {{end}}
+            </p>
+            {{end}}
+        </div>
+
+        <div id="legendas">
+            {{range .Params.paragraphs}}
+            <p>
+            {{range .}}<span data-start="{{.start}}" data-end="{{.end}}">{{.pt_br}}</span> {{end}}
+            </p>
+            {{end}}
+        </div>
+
     </article>
 
     {{ range .Params.tags }}
@@ -43,4 +58,6 @@
     </li>
     {{ end }}
 </main>
+{{ $script := resources.Get "/js/lyrics.js" | minify | fingerprint }}
+<script src="{{$script.Permalink}}"></script>
 {{ end }}
