@@ -5,3 +5,4 @@ description = "Blog com textos e audios em inglês"
 
 [params]
 repo = "http://github.com/nenitf/blog_projeto-bilingue"
+faviconEmoji = "📚"
