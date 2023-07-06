@@ -7,4 +7,8 @@
     p:not(:first-child) {
         margin-top: 1em;
     }
+
+    span {
+        cursor: pointer;
+    }
 }
