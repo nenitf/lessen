@@ -6,8 +6,11 @@ Textos com audio e tradução, para treinar tanto *reading* quanto *listening*
 
 ### Setup local
 
-- Baixar [hugo](https://github.com/gohugoio/hugo/releases)
-- Subir servidor com ``hugo server -D -w``
+- Baixar versão estendida do [hugo](https://github.com/gohugoio/hugo/releases)
+- Subir servidor e acessar ``localhost:1313``
+```sh
+hugo server -D -w --minify
+```
 
 ## Créditos e links interessantes
 
