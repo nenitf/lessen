@@ -2,3 +2,9 @@
     background: #5fffff;
     color: black;
 }
+
+#subtitles, #legendas {
+    p:not(:first-child) {
+        margin-top: 1em;
+    }
+}
