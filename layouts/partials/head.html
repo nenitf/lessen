@@ -21,9 +21,9 @@
 
     {{range slice "/css/reset.css" "/css/themes/dark.css" "/css/themes/light.css" "/css/style.css"}}
     {{ $style := resources.Get . | minify | fingerprint }}
-    <link rel="stylesheet" href="{{ $style.Permalink }}">
+    <link rel="stylesheet" href="{{ $style.RelPermalink }}">
     {{end}}
 
     {{ $style := resources.Get "/sass/lyrics.scss" | toCSS | minify | fingerprint }}
-    <link rel="stylesheet" href="{{ $style.Permalink }}">
+    <link rel="stylesheet" href="{{ $style.RelPermalink }}">
 </head>

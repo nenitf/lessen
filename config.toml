@@ -1,4 +1,4 @@
-baseURL = "https://b.neni.dev/"
+baseURL = "http://b.neni.dev/"
 languageCode = "pt-br"
 title = "Projeto bilíngue"
 description = "Blog com textos e audios em inglês"
