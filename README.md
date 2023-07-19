@@ -14,5 +14,5 @@ hugo server -D -w --minify
 
 ## Créditos e links interessantes
 
-- [Lit 2 Go](https://etc.usf.edu/lit2go)
+- [Áudio Librivox](https://librivox.org/group/17) e [texto Gutenberg](https://www.gutenberg.org/ebooks/11339)
 - [Obra de domínio publico de Aesop](http://www.read.gov/aesop)
