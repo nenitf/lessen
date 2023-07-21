@@ -49,3 +49,5 @@ paragraphs:
       start: 85
       end: 93
 ---
+
+> [If you are wise you won’t be deceived by the innocent airs of those whom you have once found to be dangerous.](https://fablesofaesop.com/the-cat-and-the-mice.html)

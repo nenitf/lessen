@@ -41,3 +41,5 @@ paragraphs:
 ---
 
 * Fuller: Lavador de roupas
+
+> [Like will draw like.](https://fablesofaesop.com/the-charcoal-maker-and-the-cloth-cleaner.html)

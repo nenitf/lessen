@@ -28,3 +28,5 @@ paragraphs:
       start: 57
       end: 60
 ---
+
+> [Greed often overreaches itself.](https://fablesofaesop.com/the-goose-with-the-golden-eggs.html)

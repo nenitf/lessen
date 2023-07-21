@@ -30,3 +30,5 @@ paragraphs:
       start: 70
       end: 75
 ---
+
+> [Notoriety is not fame.](https://fablesofaesop.com/the-mischievous-dog.html)
