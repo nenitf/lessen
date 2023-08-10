@@ -9,7 +9,7 @@
             <h1 class="">{{- .Title -}}</h1>
 
             <audio id="audiofile" controls="" style="width:99%;">
-                <source src="/{{.Section}}/{{.File.TranslationBaseName}}.mp3" type="audio/mp3">
+                <source src="/{{trim .Page.RelPermalink "/"}}.mp3" type="audio/mp3">
             </audio>
 
 

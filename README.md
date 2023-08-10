@@ -7,7 +7,7 @@ Textos com audio e tradução, para treinar tanto *reading* quanto *listening*
 ### Setup local
 
 - Baixar versão estendida do [hugo](https://github.com/gohugoio/hugo/releases)
-- Subir servidor e acessar ``localhost:1313``
+- Subir servidor e acessar ``localhost:1313/lissenin``
 ```sh
 hugo server -D -w --minify
 ```
