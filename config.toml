@@ -1,8 +1,8 @@
-baseURL = "http://neni.dev/lissenin"
+baseURL = "http://neni.dev/lessen"
 languageCode = "pt-br"
-title = "Lissenin"
+title = "Lessen"
 description = "Blog com textos e audios em inglês"
 
 [params]
-repo = "http://github.com/nenitf/blog_projeto-bilingue"
+repo = "http://github.com/nenitf/lessen"
 faviconEmoji = "📚"
