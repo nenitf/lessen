@@ -1,4 +1,4 @@
-# [Projeto bilíngue](http://b.neni.dev)
+# Lessen (listen)
 
 Textos com audio e tradução, para treinar tanto *reading* quanto *listening*
 
@@ -7,7 +7,7 @@ Textos com audio e tradução, para treinar tanto *reading* quanto *listening*
 ### Setup local
 
 - Baixar versão estendida do [hugo](https://github.com/gohugoio/hugo/releases)
-- Subir servidor e acessar ``localhost:1313/lissenin``
+- Subir servidor e acessar ``localhost:1313/lessen``
 ```sh
 hugo server -D -w --minify
 ```
